@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    [SerializeField] private QuestDataSO quests;
     private static QuestManager instance;
 
     // [구현사항 2] 정적 프로퍼티 정의
@@ -16,7 +17,9 @@ public class QuestManager : MonoBehaviour
                 instance = FindObjectOfType<QuestManager>();
                 if(instance == null)
                 {
-                    instance = new QuestManager();
+                    GameObject obj = new GameObject();
+                    obj.AddComponent<QuestManager>();
+                    instance = obj.GetComponent<QuestManager>();
                 }
             }
             return instance;
@@ -30,7 +33,7 @@ public class QuestManager : MonoBehaviour
         }
         else
         {
-            return;//이후에 추가 가능
+            Destroy(gameObject);//이미 존재하면 새로운 생성자 파괴
         }
     }
     // Start is called before the first frame update

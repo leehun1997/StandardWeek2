@@ -131,6 +131,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 504244792}
+  - component: {fileID: 504244794}
+  - component: {fileID: 504244793}
   m_Layer: 0
   m_Name: QuestManger
   m_TagString: Untagged
@@ -153,6 +155,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &504244793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504244791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0494f52844d49a4e996ea5af687e1d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolSize: 300
+  pools:
+  - name: MonsterQuest
+    size: 100
+    prefebs: {fileID: 0}
+--- !u!114 &504244794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504244791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f4b29662a4cc449accdce8ab06e9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests: {fileID: 11400000, guid: 0b53366015401de45acd18e76077f40e, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
