@@ -15,6 +15,6 @@ MonoBehaviour:
   questName: "\uC720\uB2C8\uD2F0 \uB9C8\uC2A4\uD130\uAC00 \uB418\uB294 \uCCAB \uAC78\uC74C"
   questReqiredLevel: 70
   questID: 1
-  questPrerequisites: 02000000
+  questPrerequisites: 020000000500000007000000
   monsterName: "\uC5B4\uB824\uC6B4 \uACFC\uC81C"
   monsterNum: 50

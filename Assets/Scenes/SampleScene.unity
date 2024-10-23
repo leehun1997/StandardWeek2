@@ -169,9 +169,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolSize: 300
   pools:
-  - name: MonsterQuest
+  - name: Arrow
     size: 100
-    prefebs: {fileID: 0}
+    prefebs: {fileID: 1567832835092759832, guid: 47eba922ceb5e474ea5d82167a5cb25e, type: 3}
 --- !u!114 &504244794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b29662a4cc449accdce8ab06e9dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quests: {fileID: 11400000, guid: 0b53366015401de45acd18e76077f40e, type: 2}
+  quests:
+  - {fileID: 11400000, guid: 0b53366015401de45acd18e76077f40e, type: 2}
+  - {fileID: 11400000, guid: 66dc4305f005715459574809a04de607, type: 2}
+  - {fileID: 11400000, guid: ea2c2dbd8355726429406e65034de385, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

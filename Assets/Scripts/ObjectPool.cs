@@ -35,7 +35,7 @@ public class ObjectPool : MonoBehaviour
         }
     }
        
-    public GameObject SpawnFromPool(string name)
+    public GameObject Get(string name)
     {
         if (PoolDictionary.ContainsKey(name) == false)
         {
@@ -46,15 +46,11 @@ public class ObjectPool : MonoBehaviour
         GameObject obj = PoolDictionary[name].Dequeue();
         PoolDictionary[name].Enqueue(obj);
 
-        return obj;
-    }
-
-    public GameObject Get()
-    {
-        GameObject obj = SpawnFromPool(name);
         obj.SetActive(true);
         return obj;
     }
+
+   
     public void Release(GameObject obj)
     {
         obj.SetActive(false);
